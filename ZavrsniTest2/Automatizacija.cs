@@ -70,9 +70,9 @@ namespace Test
             clcBtn2.Click();
 
 
-            bool isSuccess2 = driver.FindElement(By.ClassName("xh-highlight")).Displayed;
+            bool isSuccess2 = driver.FindElement(By.XPath("//div[@class='entry-content']/p")).Displayed;
             string isDisplayed = Convert.ToString(isSuccess2);
-            System.IO.File.AppendAllText("C:\\Users\\GIMB\\Desktop\\selenium.txt", "Button succes se prikazao - " + isDisplayed + Environment.NewLine);
+            System.IO.File.AppendAllText("C:\\Users\\GIMB\\Desktop\\selenium.txt", "Becoming testing machine se prikazao - " + isDisplayed + Environment.NewLine);
             Sleep(5);
         }
 
