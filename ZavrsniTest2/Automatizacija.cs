@@ -98,7 +98,7 @@ namespace Test
             clcBtn4.SendKeys("Igor");
 
             IWebElement clcBtn5 = driver.FindElement(By.XPath("//input[@value='Email Address']"));
-            clcBtn4.SendKeys("icalija@live.com");
+            clcBtn5.SendKeys("icalija@live.com");
             Sleep(5);
         }
 
@@ -109,7 +109,7 @@ namespace Test
             GoToURL("https://www.qtptutorial.net/automation-practice/");
             Sleep(5);
             IWebElement table = driver.FindElement(By.Id("htmlTableId"));
-            IWebElement uniqueId = table.FindElement(By.XPath("//td[contains(.,'$120, 000 + ')]"));
+            IWebElement uniqueId = table.FindElement(By.XPath("//td[contains(.,'$120,000+')]"));
 
             Sleep(5);
         }
